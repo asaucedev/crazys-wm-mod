@@ -258,8 +258,8 @@ double cJobManager::JP_FilmBeast(sGirl* girl, bool estimate)
 	if (g_Girls.HasTrait(girl, "Yandere"))						jobperformance += 25;	//	
 
 	//Bad
-	if (g_Girls.HasTrait(girl, "Iron Will"))					jobperformance += 40;	//Try not to put on a show
-	if (g_Girls.HasTrait(girl, "Fearless"))						jobperformance += 25;	//	
+	if (g_Girls.HasTrait(girl, "Iron Will"))					jobperformance -= 40;	//Try not to put on a show
+	if (g_Girls.HasTrait(girl, "Fearless"))						jobperformance -= 25;	//	
 
 
 	return jobperformance;
