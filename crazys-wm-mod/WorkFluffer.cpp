@@ -152,5 +152,24 @@ double cJobManager::JP_Fluffer(sGirl* girl, bool estimate)// not used
 		jobperformance += g_Girls.GetStat(girl, STAT_LEVEL);
 		jobperformance += g_Dice % 4 - 1;       // should add a -1 to +3 random element --PP
 	}
+		//Good
+		if (g_Girls.HasTrait(girl, "Deep Throat"))					jobperformance += 20;	//Has the skills for the job
+		if (g_Girls.HasTrait(girl, "No Gag Reflex"))				jobperformance += 10;	//
+		if (g_Girls.HasTrait(girl, "Good Kisser"))					jobperformance += 5;	//
+		if (g_Girls.HasTrait(girl, "Nimble Tongue"))				jobperformance += 5;	//
+		if (g_Girls.HasTrait(girl, "Dick-Sucking Lips"))			jobperformance += 5;	//Tools for the job
+		if (g_Girls.HasTrait(girl, "Psychic"))						jobperformance += 5;	//Knows what they like
+		if (g_Girls.HasTrait(girl, "Bisexual"))						jobperformance += 10;	//Enthusiastic about all actors
+		if (g_Girls.HasTrait(girl, "Slut"))							jobperformance += 5;	//Enjoys her work
+		if (g_Girls.HasTrait(girl, "Succubus"))						jobperformance += 15;	//Natural affinity
+		if (g_Girls.HasTrait(girl, "Mute"))							jobperformance += 5;	//No problem communicating with a dick in her mouth
+		
+		
+		//Bad
+		if (g_Girls.HasTrait(girl, "Strong Gag Reflex"))			jobperformance -= 15;	//
+		if (g_Girls.HasTrait(girl, "Gag Reflex"))					jobperformance -= 10;	//
+		if (g_Girls.HasTrait(girl, "Clumsy"))						jobperformance -= 10;	//Teeth
+		if (g_Girls.HasTrait(girl, "Vampire"))						jobperformance -= 10;	//Teeth
+		if (g_Girls.HasTrait(girl, "Skeleton"))						jobperformance -= 50;	//No flesh
 	return jobperformance;
 }
