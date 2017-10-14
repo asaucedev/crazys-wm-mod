@@ -285,7 +285,7 @@ bool cJobManager::WorkHallDealer(sGirl* girl, sBrothel* brothel, bool Day0Night1
 			}
 			else
 			{
-				ss << girlName << "broke even today, thank the Lady.\n";
+				ss << girlName << " broke even today, thank the Lady.\n";
 			}
 		}
 		else if (roll_b <= 60)
